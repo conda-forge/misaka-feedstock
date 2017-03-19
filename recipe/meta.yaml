@@ -1,8 +1,8 @@
 {%set name = "misaka" %}
-{%set version = "2.0.0" %}
+{%set version = "2.1.0" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "336ef1381ab840046b7da9f95c4c28af17e636aed8dcfcf1efe972db05f73604" %}
+{%set hash_val = "87637d90f5f52595d07ed1be93d0576d32632d125694b96b8e4ce55cd4c019fb" %}
 {%set build_num = "0" %}
 
 package:
