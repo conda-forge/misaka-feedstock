@@ -21,6 +21,7 @@ requirements:
     - pip
     - cffi >=1.0.0
     - msinttypes  # [win]
+    - setuptools
   run:
     - python
     - cffi >=1.0.0
