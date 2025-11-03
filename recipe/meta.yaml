@@ -5,21 +5,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/m/misaka/misaka-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/m/misaka/misaka-{{ version }}.tar.gz
   sha256: 62f35254550095d899fc2ab8b33e156fc5e674176f074959cbca43cf7912ecd7
 
 build:
-  number: 5
+  number: 6
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
     - cffi >=1.0.0
     - msinttypes  # [win]
+    - setuptools
   run:
     - python
     - cffi >=1.0.0
